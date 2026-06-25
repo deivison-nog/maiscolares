@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Conteúdo principal -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false">
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ScrollView
+            android:id="@+id/scrollView3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/bg02"
+            app:layout_constraintBottom_toTopOf="@+id/adView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+            <LinearLayout
+                android:id="@+id/menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/line_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="180sp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/box_01"
+                        android:layout_width="100sp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/bt01"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/roundcorner"
+                            android:cropToPadding="false"
+                            android:elevation="5dp"
+                            android:scaleType="centerInside"
+                            android:tint="@drawable/touch_selector"
+                            app:srcCompat="@drawable/icon01" />
+
+                        <TextView
+                            android:id="@+id/bttitle01"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:text="Colares\nCentro"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/box_02"
+                        android:layout_width="100sp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/bt02"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/roundcorner"
+                            android:elevation="5dp"
+                            android:scaleType="centerInside"
+                            android:tint="@drawable/touch_selector"
+                            app:srcCompat="@drawable/icon02" />
+
+                        <TextView
+                            android:id="@+id/bttitle02"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:text="Colares\nZona Rural"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/box_03"
+                        android:layout_width="100sp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/bt03"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/roundcorner"
+                            android:elevation="5dp"
+                            android:scaleType="centerInside"
+                            android:tint="@drawable/touch_selector"
+                            app:srcCompat="@drawable/icon03" />
+
+                        <TextView
+                            android:id="@+id/bttitle3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:text="Praias\nBalneários"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="180sp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/box_04"
+                        android:layout_width="100sp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/bt04"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/roundcorner"
+                            android:cropToPadding="false"
+                            android:elevation="5dp"
+                            android:scaleType="centerInside"
+                            android:tint="@drawable/touch_selector"
+                            app:srcCompat="@drawable/icon04" />
+
+                        <TextView
+                            android:id="@+id/bttitle04"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:text="Lojas\nSupermercados"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/box_05"
+                        android:layout_width="100sp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/bt05"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/roundcorner"
+                            android:elevation="5dp"
+                            android:scaleType="centerInside"
+                            android:tint="@drawable/touch_selector"
+                            app:srcCompat="@drawable/icon05" />
+
+                        <TextView
+                            android:id="@+id/bttitle05"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:text="Bares\nRestaurantes"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/box_06"
+                        android:layout_width="100sp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/bt06"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/roundcorner"
+                            android:elevation="5dp"
+                            android:scaleType="centerInside"
+                            android:tint="@drawable/touch_selector"
+                            app:srcCompat="@drawable/icon06" />
+
+                        <TextView
+                            android:id="@+id/bttitle6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:text="Hotéis\nPousadas"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line_03"
+                    android:layout_width="match_parent"
+                    android:layout_height="180sp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/box_07"
+                        android:layout_width="100sp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/bt07"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/roundcorner"
+                            android:cropToPadding="false"
+                            android:elevation="5dp"
+                            android:padding="8sp"
+                            android:scaleType="centerInside"
+                            android:tint="@drawable/touch_selector"
+                            app:srcCompat="@drawable/icon08" />
+
+                        <TextView
+                            android:id="@+id/bttitle07"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:text="Transporte"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/box_08"
+                        android:layout_width="100sp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/bt08"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/roundcorner"
+                            android:elevation="5dp"
+                            android:padding="15dp"
+                            android:scaleType="centerInside"
+                            android:tint="@drawable/touch_selector"
+                            app:srcCompat="@drawable/icon12" />
+
+                        <TextView
+                            android:id="@+id/bttitle08"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:text="Educação"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/box_09"
+                        android:layout_width="100sp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/bt09"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/roundcorner"
+                            android:elevation="5dp"
+                            android:scaleType="centerInside"
+                            android:tint="@drawable/touch_selector"
+                            app:srcCompat="@drawable/icon11" />
+
+                        <TextView
+                            android:id="@+id/bttitle9"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:text="Serviços"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line_04"
+                    android:layout_width="match_parent"
+                    android:layout_height="180sp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/box_13"
+                        android:layout_width="100sp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/bt13"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/roundcorner"
+                            android:cropToPadding="false"
+                            android:elevation="5dp"
+                            android:padding="8sp"
+                            android:scaleType="centerInside"
+                            android:tint="@drawable/touch_selector"
+                            app:srcCompat="@drawable/lanche" />
+
+                        <TextView
+                            android:id="@+id/bttitle13"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:text="Lanches e \n Café da Manhã"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/box_14"
+                        android:layout_width="100sp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/bt14"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/roundcorner"
+                            android:elevation="5dp"
+                            android:padding="15dp"
+                            android:scaleType="centerInside"
+                            android:tint="@drawable/touch_selector"
+                            app:srcCompat="@drawable/arts" />
+
+                        <TextView
+                            android:id="@+id/bttitle14"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:text="Cultural"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/box_1"
+                        android:layout_width="100sp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/bt15"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/roundcorner"
+                            android:cropToPadding="false"
+                            android:elevation="5dp"
+                            android:scaleType="centerInside"
+                            android:tint="@drawable/touch_selector"
+                            app:srcCompat="@drawable/embreve" />
+
+                        <TextView
+                            android:id="@+id/bttitle16"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:text="Avisos"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line_05"
+                    android:layout_width="match_parent"
+                    android:layout_height="180sp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/box_10"
+                        android:layout_width="100sp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/bt10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/roundcorner"
+                            android:cropToPadding="false"
+                            android:elevation="5dp"
+                            android:scaleType="centerInside"
+                            android:tint="@drawable/touch_selector"
+                            app:srcCompat="@drawable/icon_videos" />
+
+                        <TextView
+                            android:id="@+id/bttitle10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:text="Videos"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/box_11"
+                        android:layout_width="100sp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/bt11"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/roundcorner"
+                            android:elevation="5dp"
+                            android:padding="15dp"
+                            android:scaleType="centerInside"
+                            android:tint="@drawable/touch_selector"
+                            app:srcCompat="@drawable/other" />
+
+                        <TextView
+                            android:id="@+id/bttitle11"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:text="Outros"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/box_12"
+                        android:layout_width="100sp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/bt12"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/roundcorner"
+                            android:elevation="5dp"
+                            android:padding="10dp"
+                            android:scaleType="centerInside"
+                            android:tint="@drawable/touch_selector"
+                            app:srcCompat="@drawable/bkbet" />
+
+                        <TextView
+                            android:id="@+id/bttitle12"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:text="Patrocinador"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.google.android.ads.nativetemplates.TemplateView
+                android:id="@+id/my_template"
+                app:gnt_template_type="@layout/gnt_small_template_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-4063386848597338/2327922113"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_drawer_header"
+        app:menu="@menu/navigation_drawer_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

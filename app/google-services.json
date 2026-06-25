@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "962569894734",
+    "project_id": "maiscolares",
+    "storage_bucket": "maiscolares.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962569894734:android:bded61b25f78d8294bbc1f",
+        "android_client_info": {
+          "package_name": "com.info85.maiscolares"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962569894734-svi2h50iq42uhct6uup5u2opt92m8712.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.info85.maiscolares",
+            "certificate_hash": "f2a3261f1a8761052a496540003bbcd88a84e679"
+          }
+        },
+        {
+          "client_id": "962569894734-lb0p1mnpalud9hke226ba0bkm4f70co0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOpe6LOmJ3AEM_4p8-GW5DHuRrVj5Wp3E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962569894734-lb0p1mnpalud9hke226ba0bkm4f70co0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

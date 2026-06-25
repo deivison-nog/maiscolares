@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_item_1"
+        android:icon="@drawable/facebook"
+        android:title="Facebook" />
+
+    <item
+        android:id="@+id/menu_item_2"
+        android:title="Instagram"
+        android:icon="@drawable/instagram"
+        />
+
+    <item
+        android:id="@+id/menu_item_3"
+        android:title="Contato"
+        android:icon="@drawable/mailsend"
+        />
+
+    <item
+        android:id="@+id/menu_item_4"
+        android:title="Sobre"
+        android:icon="@drawable/info"
+        />
+
+    <item
+        android:id="@+id/menu_item_5"
+        android:title="Sair"
+        android:icon="@drawable/sair"
+        />
+</menu>

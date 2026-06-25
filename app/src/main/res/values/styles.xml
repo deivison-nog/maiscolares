@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ListViewItemStyle" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">20sp</item>
+
+    </style>
+
+    <string name="open_drawer">Abrir Menu</string>
+    <string name="close_drawer">Fechar Menu</string>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@drawable/roundcorner</item>
+        <item name="android:textColor">@android:color/holo_blue_bright</item>
+        <!-- Outros estilos personalizados aqui -->
+    </style>
+
+</resources>

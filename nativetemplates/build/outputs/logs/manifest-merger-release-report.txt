@@ -1,0 +1,20 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/deivison/AndroidStudioProjects/PortalInterativoColares/nativetemplates/src/main/AndroidManifest.xml:1:1-7:12
+INJECTED from /home/deivison/AndroidStudioProjects/PortalInterativoColares/nativetemplates/src/main/AndroidManifest.xml:1:1-7:12
+	package
+		INJECTED from /home/deivison/AndroidStudioProjects/PortalInterativoColares/nativetemplates/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/deivison/AndroidStudioProjects/PortalInterativoColares/nativetemplates/src/main/AndroidManifest.xml:1:11-69
+application
+ADDED from /home/deivison/AndroidStudioProjects/PortalInterativoColares/nativetemplates/src/main/AndroidManifest.xml:2:3-4:17
+	android:supportsRtl
+		ADDED from /home/deivison/AndroidStudioProjects/PortalInterativoColares/nativetemplates/src/main/AndroidManifest.xml:2:16-42
+uses-sdk
+INJECTED from /home/deivison/AndroidStudioProjects/PortalInterativoColares/nativetemplates/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/deivison/AndroidStudioProjects/PortalInterativoColares/nativetemplates/src/main/AndroidManifest.xml
+INJECTED from /home/deivison/AndroidStudioProjects/PortalInterativoColares/nativetemplates/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/deivison/AndroidStudioProjects/PortalInterativoColares/nativetemplates/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/deivison/AndroidStudioProjects/PortalInterativoColares/nativetemplates/src/main/AndroidManifest.xml

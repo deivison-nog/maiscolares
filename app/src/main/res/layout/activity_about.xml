@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About">
+
+    <ImageView
+        android:id="@+id/iconAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="300sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/appmaiscolaresnobg"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/www"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconAbout">
+
+
+        <TextView
+            android:id="@+id/textAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/jmhtypewriter"
+            android:padding="15sp"
+            android:text="O aplicativo '+ Colares' é um inovador guia turístico e cultural, desenvolvido pela Info85, que aproveita a intrigante associação de Colares com OVNIs para revelar as inúmeras maravilhas que essa cidade possui. O projeto visa apresentar Colares como um destino diverso e empolgante, onde os visitantes podem explorar uma rica variedade de atrações"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iconAbout" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/www"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#C0C0C0"
+        android:fontFamily="@font/jmhtypewriter"
+        android:gravity="center"
+        android:text="www.info85.com.br"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
