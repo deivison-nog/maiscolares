@@ -3,13 +3,17 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="8dp">
+    android:padding="12dp"
+    android:background="@color/surface"
+    android:layout_marginBottom="2dp">
 
     <TextView
         android:id="@+id/postMessageTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:textColor="@android:color/black" />
+        android:textSize="15sp"
+        android:textColor="@color/text_primary"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="4dp" />
 
 </LinearLayout>

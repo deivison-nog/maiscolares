@@ -1,9 +1,8 @@
 <resources>
-    <style name="CustomEditTextStyle" parent="Widget.AppCompat.EditText">
-        <item name="android:background">@drawable/edittext_bg</item>
-        <item name="android:padding">12dp</item>
-        <item name="android:textColor">@color/edittext_text_color</item>
+    <style name="CustomEditTextStyle" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:padding">14dp</item>
+        <item name="android:textColor">@color/text_primary</item>
         <item name="android:textSize">16sp</item>
-        <!-- Adicione mais atributos conforme necessário -->
+        <item name="android:background">@drawable/edittext_bg</item>
     </style>
 </resources>
